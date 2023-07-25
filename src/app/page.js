@@ -31,46 +31,45 @@ const HomePage = () => {
 
       {/* Header Section */}
       <header className="bg-blue-600 p-4 one flex items-center">
-  <div className="text-white text-2xl font-bold">TechCorp</div>
-  <nav
-    className={`ml-auto md:flex ${
-      isMenuOpen ? "flex-col md:block" : "hidden md:block"
-    }`}
-  >
-    <ul
-      className={`list-none  md:flex ${isMenuOpen ? "flex-col" : "hidden md:flex md:flex-row"
-      }`}
-    >
-      <li className="mr-4">
-        <a href="#" className="text-white hover:text-gray-300">
-          Home
-        </a>
-      </li>
-      <li className="mr-4">
-        <a href="#" className="text-white hover:text-gray-300">
-          About
-        </a>
-      </li>
-      <li className="mr-4">
-        <a href="#" className="text-white hover:text-gray-300">
-          Services
-        </a>
-      </li>
-      <li>
-        <a href="#" className="text-white hover:text-gray-300">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </nav>
-  {/* Toggle button */}
-  <button
-    className="ml-auto md:hidden text-white"
-    onClick={handleToggleMenu}
-  >
-    {isMenuOpen ? "Close" : "Menu"}
-  </button>
-</header>
+        <div className="text-white text-2xl font-bold">TechCorp</div>
+        <nav
+          className={`ml-auto md:flex ${isMenuOpen ? "flex-col md:block" : "hidden md:block"
+            }`}
+        >
+          <ul
+            className={`list-none  md:flex ${isMenuOpen ? "flex-col" : "hidden md:flex md:flex-row"
+              }`}
+          >
+            <li className="mr-4">
+              <a href="#" className="text-white hover:text-gray-300">
+                Home
+              </a>
+            </li>
+            <li className="mr-4">
+              <a href="#" className="text-white hover:text-gray-300">
+                About
+              </a>
+            </li>
+            <li className="mr-4">
+              <a href="#" className="text-white hover:text-gray-300">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#" className="text-white hover:text-gray-300">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        {/* Toggle button */}
+        <button
+          className="ml-auto text-[18px] md:hidden text-white"
+          onClick={handleToggleMenu}
+        >
+          {isMenuOpen ? "×" : "☰"}
+        </button>
+      </header>
 
 
 
@@ -87,7 +86,7 @@ const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="bg-gray-200 p-4 rounded-lg">
             <img
-              src="/stock.jpg" 
+              src="/stock.jpg"
               alt="Service 1"
               className="w-full h-auto mb-4"
             />
