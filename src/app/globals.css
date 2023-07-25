@@ -16,7 +16,21 @@
   }
 }
 
-body {
+@media screen and (max-width:768px) {
+
+  ul{
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+    background-color: blue;
+    padding: 20px;
+    width: 100%;
+
+  }
+}
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +38,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
