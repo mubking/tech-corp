@@ -64,7 +64,7 @@ const HomePage = () => {
         </nav>
         {/* Toggle button */}
         <button
-          className="ml-auto text-[18px] md:hidden text-white"
+          className="ml-auto text-[25px] md:hidden text-white"
           onClick={handleToggleMenu}
         >
           {isMenuOpen ? "×" : "☰"}
